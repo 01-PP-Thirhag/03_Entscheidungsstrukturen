@@ -11,7 +11,11 @@
 // isJohnOlder = (ageJohn > ageMark);
 // isJohnEqual = (ageJohn == ageMark);
 
+<<<<<<< HEAD
 // // // Ausgabe
+=======
+// Ausgabe
+>>>>>>> bcde9650af6396f864a0a3cf0d4e00e75cb7006a
 // console.log("ageJohn: " + ageJohn);
 // console.log("ageMark: " + ageMark);
 // console.log("isJohnOlder: " + isJohnOlder);
@@ -66,11 +70,16 @@
 
 // else 
 // {
+<<<<<<< HEAD
 //     console.log("John ist jünger")
+=======
+//     console.log("John ist jünger.");  
+>>>>>>> bcde9650af6396f864a0a3cf0d4e00e75cb7006a
 // }
 
 /****** Fallunterscheidung / SWITCH|CASE 1 ******/
 
+<<<<<<< HEAD
  const firstName = "Jane";
 let job;
 
@@ -79,11 +88,22 @@ job = "diver";      // .. taucht im Rhein!
 job = "artist";     // .. malt ein Bild!
 job = "pilot";      // .. macht etwas anderes! --> default
 job = "teacher";    // .. unterrichtet!
+=======
+const firstName = "Jane";
+let job;
+
+job = "driver";     // .. fährt TAXI! / UBER
+// job = "diver";      // .. taucht im Rhein! 
+// job = "artist";     // .. malt ein Bild!
+// job = "pilot";      // .. macht etwas anderes! --> default
+// job = "teacher";    // .. unterrichtet!
+>>>>>>> bcde9650af6396f864a0a3cf0d4e00e75cb7006a
 // job = "instructor";  // .. unterrichtet!
 
 switch (job) 
 {
     case "driver":
+<<<<<<< HEAD
         console.log("Jane fährt TAXI!")
         break; 
         case "diver":
@@ -105,4 +125,27 @@ switch (job)
         console.log("Jane macht etwas anderes!");
         break;
 
+=======
+        console.log("Jane fährt TAXI!");
+        break;
+    case "diver":
+        console.log("Jane taucht im Rhein!");
+        break;
+    case "artist":
+        console.log("Jane malt ein Bild!");
+        break;
+    case "teacher":
+    case "instructor":
+        console.log("Jane unterrichtet!");
+        break;
+
+    // case "instructor" || "teacher": // ??
+    //     console.log("Jane unterrichtet!");
+    //     break;
+
+
+    default:
+        console.log("Jane macht etwas anderes!");
+        break;
+>>>>>>> bcde9650af6396f864a0a3cf0d4e00e75cb7006a
 }
