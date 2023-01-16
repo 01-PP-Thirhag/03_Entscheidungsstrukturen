@@ -1,8 +1,8 @@
 "use strict";
 // Entscheidungsstrukturen | control flow
 // Deklaration + Assigment
-const ageJohn = 35;
-const ageMark = 30;
+const ageJohn = 30;
+const ageMark = 35;
 
 // Deklaration
 let isJohnOlder, isJohnEqual;
@@ -33,36 +33,38 @@ console.log("------------------");
 // mit Alternative  
 // entweder ja oder nein
 
-// if (true)
-// if (fals)
-// if(isJohnOlder)
+// if (true) 
+// if (false) 
+// if (isJohnOlder)
 // if (ageJohn > ageMark)
 // {
-//     console.log("John ist älter");
-// }
-// else
+//     console.log("John ist älter."); 
+// } 
+// else 
 // {
-//     console.log("John ist jünger");
+//     console.log("John ist jünger.");  
 // }
+
 /************  Ternäre (ternary) Schreibweise ************/
-// console.log( (isJohnOlder) ? "John is older" : "Mark is older")
+// console.log( (isJohnOlder) ? "John is older" : "Mark is older");
+
 
 /************ IF - ELSE IF  ************/
-
 // mit alternativen Fällen (älter, jünger, gleich alt)
 
 if (isJohnOlder)
 {
-    console.log("John ist älter.");
-}
-//<--- 1.n Alternativens
+    console.log("John ist älter."); 
+} 
 
+// < --- 1..n Alternativen
 else if (isJohnEqual)
 {
-    console.log("John ist gleich alt.");  
+    console.log("John ist gleich alt."); 
 }
-//<--- 
-else
+// < ---
+
+else 
 {
     console.log("John ist jünger")
 }
