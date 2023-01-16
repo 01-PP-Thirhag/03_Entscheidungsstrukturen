@@ -1,7 +1,5 @@
 "use strict";
-
 // Entscheidungsstrukturen | control flow
-
 // Deklaration + Assigment
 const ageJohn = 35;
 const ageMark = 30;
@@ -31,7 +29,6 @@ console.log("------------------");
 //     console.log("John ist älter."); 
 // }
 
-
 /************ IF - ELSE  ************/
 // mit Alternative  
 // entweder ja oder nein
@@ -53,3 +50,18 @@ console.log("------------------");
 /************ IF - ELSE IF  ************/
 
 // mit alternativen Fällen (älter, jünger, gleich alt)
+
+if (isJohnOlder)
+{
+    console.log("John ist älter.");
+}
+//<--- 1.n Alternative
+
+else if (isJohnEqual)
+{
+    console.log("John ist gleich alt.");  
+}
+else
+{
+    console.log("John ist jünger")
+}
