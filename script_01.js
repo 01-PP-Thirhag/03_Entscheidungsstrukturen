@@ -1,22 +1,22 @@
 "use strict";
 // Entscheidungsstrukturen | control flow
 // Deklaration + Assigment
-const ageJohn = 30;
-const ageMark = 35;
+// const ageJohn = 30;
+// const ageMark = 35;
 
-// Deklaration
-let isJohnOlder, isJohnEqual;
+// // Deklaration
+// let isJohnOlder, isJohnEqual;
 
-// // Test | Logische Aussage
-isJohnOlder = (ageJohn > ageMark);
-isJohnEqual = (ageJohn == ageMark);
+// // // Test | Logische Aussage
+// isJohnOlder = (ageJohn > ageMark);
+// isJohnEqual = (ageJohn == ageMark);
 
-// // Ausgabe
-console.log("ageJohn: " + ageJohn);
-console.log("ageMark: " + ageMark);
-console.log("isJohnOlder: " + isJohnOlder);
-console.log("isJohnEqual: " + isJohnEqual);
-console.log("------------------");
+// // // Ausgabe
+// console.log("ageJohn: " + ageJohn);
+// console.log("ageMark: " + ageMark);
+// console.log("isJohnOlder: " + isJohnOlder);
+// console.log("isJohnEqual: " + isJohnEqual);
+// console.log("------------------");
 
 /************ IF  ************/
 // TINA --> There is no alternative!
@@ -52,19 +52,57 @@ console.log("------------------");
 /************ IF - ELSE IF  ************/
 // mit alternativen Fällen (älter, jünger, gleich alt)
 
-if (isJohnOlder)
-{
-    console.log("John ist älter."); 
-} 
+// if (isJohnOlder)
+// {
+//     console.log("John ist älter."); 
+// } 
 
-// < --- 1..n Alternativen
-else if (isJohnEqual)
-{
-    console.log("John ist gleich alt."); 
-}
-// < ---
+// // < --- 1..n Alternativen
+// else if (isJohnEqual)
+// {
+//     console.log("John ist gleich alt."); 
+// }
+// // < ---
 
-else 
+// else 
+// {
+//     console.log("John ist jünger")
+// }
+
+/****** Fallunterscheidung / SWITCH|CASE 1 ******/
+
+ const firstName = "Jane";
+let job;
+
+job = "driver";     // .. fährt TAXI! / UBER
+job = "diver";      // .. taucht im Rhein! 
+job = "artist";     // .. malt ein Bild!
+job = "pilot";      // .. macht etwas anderes! --> default
+job = "teacher";    // .. unterrichtet!
+// job = "instructor";  // .. unterrichtet!
+
+switch (job) 
 {
-    console.log("John ist jünger")
+    case "driver":
+        console.log("Jane fährt TAXI!")
+        break; 
+        case "diver":
+        console.log("Jane taucht in Rhein!")
+        break; 
+        case "artist":
+        console.log("Jane mal ein Bild")
+        break; 
+        case "teacher":
+        case "instruktor":
+        console.log("Jane unterrichtet")
+            break; 
+
+        // case "instruktor"|| "teacher" // ???
+        //     console.log("Jane unterrichtet")
+        //     break; 
+    
+    default:
+        console.log("Jane macht etwas anderes!");
+        break;
+
 }
