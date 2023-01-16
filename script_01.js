@@ -75,6 +75,7 @@
 // let job;
 
 // job = "driver";     // .. fährt TAXI! / UBER
+// job = "driver";     // .. fährt TAXI! / UBER
 // job = "diver";      // .. taucht im Rhein! 
 // job = "artist";     // .. malt ein Bild!
 // job = "pilot";      // .. macht etwas anderes! --> default
@@ -96,8 +97,23 @@
 //         case "instruktor":
 //         console.log("Jane unterrichtet")
 //             break; 
+// switch (job) 
+// {
+//     case "driver":
+//         console.log("Jane fährt TAXI!");
+//         break;
+//     case "diver":
+//         console.log("Jane taucht im Rhein!");
+//         break;
+//     case "artist":
+//         console.log("Jane malt ein Bild!");
+//         break;
+//     case "teacher":
+//     case "instructor":
+//         console.log("Jane unterrichtet!");
+//         break;
 
-        // case "instruktor"|| "teacher" // ???
+        // case ("instruktor"|| "teacher") // ???
         //     console.log("Jane unterrichtet")
         //     break; 
     
@@ -106,3 +122,25 @@
 //         break;
 
 // }
+
+//     default:
+//         console.log("Jane macht etwas anderes!");
+//         break;
+// }
+
+/********  Fallunterscheidung / SWITCH|CASE 2 *******/
+
+const cond = true;
+const a = 10;
+
+switch (cond) {
+    case (a == 1): // true && true
+        console.log("a ist gleich 1");
+        break;
+    case (a == 2):
+        console.log("a ist gleich 2");
+        break;
+    default:
+        console.log("a hat einen anderen Wert");
+        break;
+}
